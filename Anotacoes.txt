@@ -1,0 +1,12 @@
+start server
+  Comando
+	-> Terminal -> uvicorn server:app -relaod
+  Diretrivas
+	server = nome do arquivo .py da api
+	app = nome da instância do FastAPI
+	reload = recarregar sempre que indetificar alteração no projeto
+	
+* Entender melhor
+	Uvicorn
+	Swagger
+	Diferenças entre o VSCode e PyCharm
