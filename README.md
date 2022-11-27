@@ -16,10 +16,6 @@
 
 :small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
 
-:small_blue_diamond: [Casos de Uso](#casos-de-uso)
-
-:small_blue_diamond: [Linguagens, dependencias e libs utilizadas](#linguagens-dependencias-e-libs-utilizadas)
-
 :small_blue_diamond: [Tarefas em aberto](#tarefas-em-aberto)
 
 :small_blue_diamond: [Desenvolvedores e Contribuintes](#desenvolvedores-e-contribuintes)
@@ -39,6 +35,8 @@
 
 ## Pré-requisitos
 
+:warning: [Python](https://python.org.br/)
+
 :warning: [FastAPI](https://fastapi.tiangolo.com/)
 
 
@@ -49,16 +47,6 @@ No terminal, clone o projeto:
 ```
 git clone https://github.com/brunno-raffael/cursobackendpythonfastapi.git
 ```
-
-## Casos de Uso
-
-Explique com mais detalhes como a sua aplicação poderia ser utilizada. O uso de **gifs** aqui seria bem interessante. 
-
-Exemplo: Caso a sua aplicação tenha alguma funcionalidade de login apresente neste tópico os dados necessários para acessá-la.
-
-## Linguagens, dependencias e libs utilizadas
-
-- [Python](https://python.org.br/)
 
 ## Tarefas em aberto
 
