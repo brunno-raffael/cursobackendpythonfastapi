@@ -47,6 +47,34 @@ No terminal, clone o projeto:
 ```
 git clone https://github.com/brunno-raffael/cursobackendpythonfastapi.git
 ```
+<h3>
+Front-End
+</h3>
+No VSCode, instale a extensão (Ctrl + Shift + X) do Live Server.
+Depois clique com botão direito no arquivo HTML no Explorador de Arquivos e clique na opção Open with Live Server.
+
+<h3>
+Back-End
+</h3>
+
+No terminal, instale o Uvicorn (https://www.uvicorn.org/) :
+
+```
+pip install uvicorn
+```
+
+Depois abra o diretório do back-end:
+
+```
+cd src
+```
+
+Executar o projeto:
+
+```
+uvicorn server:app --reload  
+```
+
 
 ## Tarefas em aberto
 
