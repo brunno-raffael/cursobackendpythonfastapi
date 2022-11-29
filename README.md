@@ -31,7 +31,19 @@
 
 ## Funcionalidades
 
-:heavy_check_mark: Funcionalidade 1  
+<h3>
+Hello (Sem Front-End)
+</h3>
+
+:heavy_check_mark: Exemplos de métodos básicos (GET, POST, PUT, DELETE)
+
+:heavy_check_mark: Exemplos de métodos com operações básicas (Tratamento de Texto e Operações Matemáticas)
+
+<h3>
+AppAnimal (Com Front-End)
+</h3>
+
+:heavy_check_mark: Exemplos de métodos básicos (GET, POST, DELETE)
 
 ## Pré-requisitos
 
@@ -47,14 +59,21 @@ No terminal, clone o projeto:
 ```
 git clone https://github.com/brunno-raffael/cursobackendpythonfastapi.git
 ```
+
+No terminal, instale os requisitos :
+
+```
+pip install -r requirements.txt
+```
+
 <h3>
-Front-End
+Executando Front-End
 </h3>
 No VSCode, instale a extensão (Ctrl + Shift + X) do Live Server.
 Depois clique com botão direito no arquivo HTML no Explorador de Arquivos e clique na opção Open with Live Server.
 
 <h3>
-Back-End
+Executando Back-End
 </h3>
 
 No terminal, instale o Uvicorn (https://www.uvicorn.org/) :
