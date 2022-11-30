@@ -20,6 +20,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 class Animal(BaseModel):
     id: str
     nome: str
@@ -30,11 +31,13 @@ class Animal(BaseModel):
 
 banco: List[Animal] = []
 
+
 def get_animal(animal_id):
     for animal in banco:
         if animal_id == animal.id:
             return animal
     return None   
+
 
 def get_animal_index(animal_id):
     for index, animal in enumerate(banco):
@@ -42,14 +45,17 @@ def get_animal_index(animal_id):
             return index
     return -1    
 
+
 @app.get('/animais')
 def listar_animais():
     return banco
 
+
 @app.get('/animais/{animal_id}')
 def obter_animal(animal_id: str):
     animal = get_animal(animal_id)
-    return animal if animal is not None else {"erro":"Animal não encontrado!"}
+    return animal if animal is not None else {"erro": "Animal não encontrado!"}
+
 
 @app.delete('/animais/{animal_id}')
 def remover_animal(animal_id: str):
@@ -57,15 +63,13 @@ def remover_animal(animal_id: str):
 
     if posicao != -1:
         banco.pop(posicao)
-        return {"message":"Animal removido com sucesso!"}
+        return {"message": "Animal removido com sucesso!"}
     else:
-        return {"message":"Animal não localizado!"}   
+        return {"message": "Animal não localizado!"}
 
 
 @app.post('/animais')
 def criar_animais(animal: Animal):
     animal.id = str(uuid4())
     banco.append(animal)
-    return {"message":f"Animal cadastro com sucesso! Id: {animal.id}"}  
-
-
+    return {"message": f"Animal cadastro com sucesso! Id: {animal.id}"}
