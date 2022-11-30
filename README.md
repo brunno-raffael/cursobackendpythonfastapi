@@ -45,11 +45,17 @@ AppAnimal (Com Front-End)
 
 :heavy_check_mark: Exemplos de métodos básicos (GET, POST, DELETE)
 
+<h3>
+AppBLX (Sem Front-End + Com Bando de Dados (SQLite))
+</h3>
+
+:heavy_check_mark: Exemplos de métodos básicos (GET, POST)
+
+:heavy_check_mark: Exemplos de manipulação de dados (INSERT, SELECT)
+
 ## Pré-requisitos
 
 :warning: [Python](https://python.org.br/)
-
-:warning: [FastAPI](https://fastapi.tiangolo.com/)
 
 
 ## Como rodar a aplicação :arrow_forward:
@@ -76,22 +82,10 @@ Depois clique com botão direito no arquivo HTML no Explorador de Arquivos e cli
 Executando Back-End
 </h3>
 
-No terminal, instale o Uvicorn (https://www.uvicorn.org/) :
+No terminal, execute o projeto através do Uvicorn (https://www.uvicorn.org/) :
 
 ```
-pip install uvicorn
-```
-
-Depois abra o diretório do back-end:
-
-```
-cd src
-```
-
-Executar o projeto:
-
-```
-uvicorn server:app --reload  
+uvicorn src.server:app --reload --reload-dir=src
 ```
 
 
